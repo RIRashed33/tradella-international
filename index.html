@@ -13,15 +13,51 @@
 <link rel="stylesheet" href="./css/responsive.css">
 <body>
     <header class="site-header">
-        <div class="container">
-            <div class="topbar-content">
-                <a href="tel:786-842-0320"><i class="fa-regular fa-phone-volume"></i> 786-842-0320</a>
-                <span>|</span>
-                <a href="mailto:sales@anncarequipment.com"><i class="fa-regular fa-envelope"></i> sales@anncarequipment.com</a>
+        <div class="header-topbar d-none d-lg-block">
+            <div class="container">
+                <div class="tobbar-content">
+                    <a href="tel:786-842-0320"><img src="./img/icon/phone-ringing.png" alt=""> 786-842-0320</a>
+                    <span>|</span>
+                    <a href="mailto:sales@anncarequipment.com"><img src="./img/icon/envelope.png" alt=""> sales@anncarequipment.com</a>
+                </div>
             </div>
-            <div class="main-header">
-                <div class="row">
-                    
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-auto">
+                        <div class="mobile-header">
+                            <a class="site-logo">
+                                <img src="./img/logo.png" alt="">
+                            </a>
+                            <button class="hamburger d-lg-none" data-bs-toggle="collapse" data-bs-target="#siteNavigation" onclick="document.body.classList.toggle('active-menu')">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg navbar-expand-lg">
+                        <div id="siteNavigation" class="collapse navbar-collapse">
+                            <nav class="navmenu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">ABOUT</a></li>
+                                    <li><a href="#">BRANDS</a></li>
+                                    <li><a href="#">PARTS</a></li>
+                                    <li><a href="#">EQUIPMENT</a></li>
+                                    <li><a href="#">CONTACT</a></li>
+                                </ul>
+                                <div class="navmenu-extra-content">
+                                    <a href="#" class="primary-gradient"><img src="./img/icon/calculator.png" alt=""> Need Estimate?</a>
+                                </div>
+                                <div class="tobbar-content d-lg-none">
+                                    <a href="tel:786-842-0320"><img src="./img/icon/phone-ringing.png" alt=""> 786-842-0320</a>
+                                    <a href="mailto:sales@anncarequipment.com"><img src="./img/icon/envelope.png" alt=""> sales@anncarequipment.com</a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -30,7 +66,6 @@
 
 
     <!-- Scripts link -->
-    <script src="https://kit.fontawesome.com/8328b4f28c.js" crossorigin="anonymous"></script>
     <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,104 @@
+:root {
+    --primary: #fdbe00;
+    --secondary: #004377;
+    --tertiary: #007dff;
+    --high-contrast: #101010;
+    --bg: #010d27;
+    --medium-bg: #131d31;
+    --white: #ffffff;
+    --body-font: "Poppins", serif;
+}
+a, button {
+    display: inline-block;
+    -webkit-transition: all 0.33s;
+    transition: all 0.33s;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    font-size: 16px;
+    font-family: var(--body-font);
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--high-contrast);
+}
+h1{
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 700;
+}
+.container {
+    max-width: 1224px;
+    padding: 0 12px;
+}
+.primary-gradient {
+    background-color: var(--primary);
+    padding: 10px 14px;
+    border: none;
+    border-radius: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--white);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(90deg, rgba(253,190,0,1) 0%, rgba(0,125,255,1) 100%);
+}
+.primary-gradient:hover {
+    transform: scale(1.05);
+}
+
+/* Header Style */
+.header-topbar {
+    padding: 20px 0;
+    background-color: var(--bg);
+}
+.tobbar-content {
+    text-align: center;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.tobbar-content a {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--white);
+}
+.tobbar-content a:hover {
+    color: var(--tertiary);
+}
+.main-header {
+    background-color: var(--white);
+    padding: 16px 0;
+}
+nav.navmenu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 48px;
+}
+nav.navmenu ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+nav.navmenu ul li a {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--high-contrast);
+}
+nav.navmenu ul li a:hover {
+    color: var(--primary);
+}
