@@ -51,6 +51,10 @@ h4 {
     line-height: 1.17;
     font-weight: 400;
 }
+h5 {
+    font-size: 20px;
+    font-weight: 700;
+}
 h1:last-child, h2:last-child, h3:last-child, h4:last-child, P:last-child {
     margin-bottom: 0;
 }
@@ -74,6 +78,17 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, P:last-child {
 .primary-gradient:hover {
     transform: scale(1.05);
 }
+.tertiary-solid {
+    padding: 8px 20px;
+    background-color: var(--tertiary);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 20px;
+}
+.tertiary-solid:hover {
+    background-color: var(--secondary);
+}
 .primary {
     color: var(--primary);
 }
@@ -87,6 +102,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, P:last-child {
     display: block;
     border: 1px solid var(--tertiary);
     margin: 8px 0;
+    max-width: 172px;
 }
 
 /* Header Style */
@@ -187,6 +203,8 @@ nav.navmenu ul li a:hover {
 .hero-slider-indicator.carousel-indicators button.active {
     border-color: var(--primary);
 }
+
+/* Three Box Section Style */
 .three-box-section {
     background-color: var(--white);
     padding: 120px 0;
@@ -219,4 +237,75 @@ nav.navmenu ul li a:hover {
 }
 .three-box-content .tertiary-divider {
     max-width: 112px;
+}
+
+/* Teaser Section Style */
+.teasers-section {
+    padding: 80px 0;
+    background-color: var(--medium-bg);
+    color: var(--white);
+    background-image: url(../img/teser-section-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.single-teaser {
+    max-width: 500px;
+}
+.teaser-img {
+    height: 52px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 16px;
+}
+.teaser-img img {
+    max-height: 100%;
+    width: auto;
+}
+.single-teaser .tertiary-divider {
+    max-width: 88px;
+}
+.single-teaser p a {
+    text-transform: uppercase;
+    color: var(--white);
+    font-style: italic;
+}
+
+/* Brands ands Others Section Style */
+.brands-section {
+    padding: 120px 0;
+    background-color: var(--white);
+}
+.brands-content {
+    max-width: 520px;
+}
+.all-brands {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 16px;
+    justify-content: space-between;
+}
+.single-brand {
+    max-width: 250px;
+}
+.spare-parts-section {
+    padding: 115px 0;
+    background-color: var(--medium-bg);
+    color: var(--white);
+    background-image: url(../img/parts-section-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.spare-parts-content {
+    padding: 64px 0;
+    background-image: url(../img/parts-gear.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+.spare-parts-box {
+    max-width: 800px;
+    background-color: var(--medium-bg);
+    margin-left: auto;
+    padding: 36px;
 }

@@ -108,7 +108,7 @@
     .hero-slider-left {
         text-align: center;
     }
-    .three-box-section {
+    .three-box-section, .teasers-section, .brands-section, .spare-parts-section {
         padding: 60px 0;
     }
     .single-box {
@@ -118,6 +118,10 @@
         flex: 1 0 80px;
         min-height: 80px;
     }
+    .spare-parts-content {
+        padding: 0;
+        background: none;
+    }
 
 
 
@@ -125,6 +129,12 @@
 @media screen and (max-width:575.9px){
     h1 {
         font-size: 42px;
+    }
+    .single-brand {
+        max-width: 100%;
+    }
+    .spare-parts-box {
+        padding: 24px;
     }
 
 
