@@ -293,7 +293,7 @@ nav.navmenu ul li a:hover {
     background-color: var(--medium-bg);
     color: var(--white);
     background-image: url(../img/parts-section-bg.jpg);
-    background-size: cover;
+    background-size: 110%;
     background-position: center;
 }
 .spare-parts-content {
@@ -308,4 +308,59 @@ nav.navmenu ul li a:hover {
     background-color: var(--medium-bg);
     margin-left: auto;
     padding: 36px;
+}
+
+/* Footer Style */
+.footer-top-section {
+    background-color: var(--bg);
+    color: var(--white);
+    padding: 72px 0 24px;
+    font-size: 14px;
+}
+.footer-logo {
+    text-align: center;
+    margin-bottom: 48px;
+}
+.footer-column {
+    max-width: 250px;
+}
+.footer-column h5 {
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+ul.social-media-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+ul.social-media-list li a {
+    max-width: 26px;
+    height: 26px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+:is(.contact-info-list, .footer-links) li:not(li:last-child) {
+    margin-bottom: 8px;
+}
+:is(.contact-info-list, .footer-links) li a {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.4;
+    color: var(--white);
+}
+ul.contact-info-list li a span {
+    flex: 0 0 18px;
+    text-align: center;
+}
+.footer-column .primary-gradient {
+    padding: 10px 20px;
+    text-transform: inherit;
+}
+.copyright-section {
+    background-color: #000718;
+    color: var(--white);
+    text-align: center;
+    font-size: 12px;
+    padding: 12px 0;
 }
