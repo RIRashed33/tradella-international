@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
 <link rel="stylesheet" href="./css/bootstrap.min.css">
 <link rel="stylesheet" href="./css/custom.css">
 <link rel="stylesheet" href="./css/responsive.css">
+
 <body>
     <header class="site-header">
         <div class="header-topbar d-none d-lg-block">
@@ -28,7 +30,8 @@
                     <div class="col-lg-auto">
                         <div class="mobile-header">
                             <a class="site-logo">
-                                <img src="./img/logo.png" alt="">
+                                <img src="./img/logo.png" alt="site_logo" class="primary">
+                                <img src="./img/logo-white.png" alt="site_logo" class="white">
                             </a>
                             <button class="hamburger d-lg-none" data-bs-toggle="collapse" data-bs-target="#siteNavigation" onclick="document.body.classList.toggle('active-menu')">
                                 <span></span>
@@ -63,9 +66,100 @@
         </div>
     </header>
 
+    <main>
+        <section class="hero-slider-section">
+            <div class="container">
+                <div class="hero-slider-content">
+                    <div class="hero-slider-left">
+                        <h1><span class="primary">GROW</span> YOUR BUSINESS <span class="tertiary">WITH ANNCAR</span></h1>
+                        <h4>HIGH QUALITY HEAVY EQUIPMENT SPARE PARTS SUPPLIER</h4>
+                    </div>
+                    <div class="hero-slider">
+                        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="3000">
+                                    <div class="single-hero-slide">
+                                        <img src="./img/hero-slider.png" class="d-block w-100" alt="slider_image">
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <div class="single-hero-slide">
+                                        <img src="./img/hero-slider.png" class="d-block w-100" alt="slider_image">
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <div class="single-hero-slide">
+                                        <img src="./img/hero-slider.png" class="d-block w-100" alt="slider_image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hero-slider-indicator carousel-indicators">
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="three-box-section">
+            <div class="container">
+                <div class="three-box">
+                    <div class="single-box">
+                        <div class="box-img-title">
+                            <div class="box-img">
+                                <img src="./img/high-speed.png" alt="">
+                            </div>
+                            <h3>Fast Response</h3>
+                        </div>
+                        <p>For most part requests, we answer within 1hr (standard quote response time less than 24hrs).</p>
+                    </div>
+                    <div class="single-box">
+                        <div class="box-img-title">
+                            <div class="box-img">
+                                <img src="./img/avilable.png" alt="">
+                            </div>
+                            <h3>Large Availability</h3>
+                        </div>
+                        <p>We offer a wide range of original/genuine and aftermarket parts for Komatsu®, JCB®, and Caterpillar®.</p>
+                    </div>
+                    <div class="single-box">
+                        <div class="box-img-title">
+                            <div class="box-img">
+                                <img src="./img/woldwide.png" alt="">
+                            </div>
+                            <h3>Worldwide Shipping</h3>
+                        </div>
+                        <p>We offer a wide range of original/genuine and aftermarket parts for Komatsu®, JCB®, and Caterpillar®.</p>
+                    </div>
+                </div>
+                <div class="row g-4 row-gap-3 align-items-center">
+                    <div class="col-md">
+                        <div class="three-box-banner text-center text-md-start">
+                            <img src="./img/office-worker-circle.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="three-box-content">
+                            <h2><span class="primary">WHY</span> <span class="secondary">ANNCAR</span></h2>
+                            <span class="tertiary-divider"></span>
+                            <p>We have partnered with many suppliers and have the ability to acquire thousands of spare parts for your heavy machinery. By utilizing our large availability of genuine and aftermarket spare parts, and our extensive supplier network, you are sure to find the parts you need.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
 
 
     <!-- Scripts link -->
     <script src="./js/bootstrap.min.js"></script>
 </body>
+
 </html>
