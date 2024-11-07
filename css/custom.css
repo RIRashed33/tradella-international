@@ -106,9 +106,43 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, P:last-child {
 }
 
 /* Header Style */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    z-index: 99;
+}
+header.header.header-unpinned {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+}
+header.header.header-pinned {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+header.header.header-unpinned.header-not-top {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+}
+body.active-menu header.header {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+main {
+    margin-top: 166px;
+}
+header.header.header-unpinned .header-topbar {
+    width: 0;
+    height: 0;
+    padding: 0;
+}
 .header-topbar {
     padding: 20px 0;
     background-color: var(--bg);
+    transition: all 0.4s;
 }
 .tobbar-content {
     text-align: center;

@@ -13,6 +13,12 @@
         position: relative;
         z-index: 99;
     }
+    .main-header {
+        padding: 12px 0;
+    }
+    main {
+        margin-top: 80px;
+    }
     button.hamburger {
         width: 40px;
         display: flex;
